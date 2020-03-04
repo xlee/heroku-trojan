@@ -1,1 +1,1 @@
-service trojan status 
+systemctl start trojan.service 
