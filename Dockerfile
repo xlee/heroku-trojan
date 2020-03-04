@@ -2,4 +2,6 @@ FROM debian:sid
 RUN apt update -y \
     	&& apt upgrade -y \
     	&& apt install -y trojan vim systemd 
-CMD systemctl start trojan.service /usr/sbin/init
+ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+CMD /entrypoint.sh
