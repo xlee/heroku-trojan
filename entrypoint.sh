@@ -1,1 +1,1 @@
-service trojan 
+service trojan status 
