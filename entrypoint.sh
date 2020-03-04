@@ -1,1 +1,1 @@
-trojan 
+service trojan 
